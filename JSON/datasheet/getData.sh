@@ -1,5 +1,5 @@
 #!/bin/bash
-#docker run -d --name mongo-db -p 27017:27017 mongo
+# docker run -d --name mongo-db -p 27017:27017 mongo
 if [[ $# -eq 0 ]] ; then
     echo 'Please give database name'
     exit 1
