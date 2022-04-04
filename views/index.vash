@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //alert(`JQuery is working ...`);
+            $('.pbk').keypress(e => {
+                if (e.which === 13) {
+                    alert(`Enter Pressed`)
+                }
+            })            
+        })
+    </script>     
+</head>
+<body>
+    <h3>@model.title</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Reg. No :</span>
+                    <input type="text" class="form-control pbk" id="regno" aria-label="RegNo">
+                </div>
+                <div class="card">
+                    <h5 class="card-header">Student Details</h5>
+                    <div class="card-body">
+                        <span class="hdr text-info">Student Name : </span>
+                        <span class="card-text" id="studentname"></span><br>
+                        <span class="hdr text-info">Father Name : </span>
+                        <span class="card-text" id="fathername"></span>
+                    </div>
+                </div>                    
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
